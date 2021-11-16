@@ -19,6 +19,6 @@ io.on('connection', (socket)=>{
 })
 
 
-http.listen(80, () =>{ 
+http.listen(port, () =>{ 
     console.log('Servidor rodando na porta 80')
 })
