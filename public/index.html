@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/API/Screen_Capture_API/Using_Screen_Capture -->
+
+    <div id="msgs"></div>
+    
+    <p><button id="start">Start Capture</button> <button id="stop">Stop Capture</button></p>
+    
+    <video id="video" autoplay></video>
+    <br>
+    
+    <strong>Log:</strong>
+    <br>
+    <pre id="log"></pre>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-peer/9.1.2/simplepeer.min.js"></script>
+    <script src="./webrtc-handler.js"></script>
+</body>
+</html>
