@@ -14,7 +14,7 @@ io.on('connection', (socket)=>{
     console.log('Novo cliente conectado no id:',socket.id);
 
     socket.on('offer', (data) => {
-        socket.broadcast.emit('offer', data);
+        io.sockets.emit('offer', data);
     });
 
     socket.on('initiate', () => {  
